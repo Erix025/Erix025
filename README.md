@@ -26,9 +26,9 @@ Here are some technologies I work with:
 
 ### 🌐 Find me around the web
 
-| Platform       | Link                                   | Description                  |
-|----------------|----------------------------------------|------------------------------|
-| **`🌐 Blog`**  | [blogs.erix025.me](https://blogs.erix025.me)   | My technical writings        |
-| **`💻 GitHub`**| [github.com/erix025](https://github.com/erix025)| My projects & contributions  |
-| **`📧 Email`** | [erix025@outlook.com](mailto:erix025@outlook.com) | Professional inquiries       |
-<!-- | **`📄 Profile`** | [profile.erix025.me](https://profile.erix025.me) | My personal profile          | -->
+| Platform         | Link                                              | Description                 |
+| ---------------- | ------------------------------------------------- | --------------------------- |
+| **`🌐 Blog`**    | [blogs.erix025.me](https://blogs.erix025.me)      | My technical writings       |
+| **`💻 GitHub`**  | [github.com/erix025](https://github.com/erix025)  | My projects & contributions |
+| **`📧 Email`**   | [erix025@outlook.com](mailto:erix025@outlook.com) | Professional inquiries      |
+| **`📄 Profile`** | [profile.erix025.me](https://profile.erix025.me)  | My personal profile         |
