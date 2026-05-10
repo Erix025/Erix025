@@ -9,10 +9,10 @@
 ### 📊 GitHub Stats
 
 <a href="https://github.com/erix025">
-  <img height="180" src="./assets/github-stats.svg?v=2" alt="GitHub stats for erix025" />
+  <img height="180" src="./assets/github-stats.svg?v=3" alt="GitHub stats for erix025" />
 </a>
 <a href="https://github.com/erix025">
-  <img height="180" src="./assets/top-langs.svg?v=2" alt="Top languages for erix025" />
+  <img height="180" src="./assets/top-langs.svg?v=3" alt="Top languages for erix025" />
 </a>
 
 ### 🛠️ Tech Stack

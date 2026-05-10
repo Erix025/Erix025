@@ -24,27 +24,20 @@ jobs:
           fetch-depth: 0
 
       - name: Generate stats card
-        uses: cicirello/user-statistician@v1
+        uses: readme-tools/github-readme-stats-action@v1
         with:
-          image-file: assets/github-stats.svg
-          custom-title: GitHub Stats
-          colors: dark
-          hide-keys: languages
-          commit-and-push: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&hide_rank=true&theme=tokyonight
+          path: assets/github-stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate top languages card
-        uses: cicirello/user-statistician@v1
+        uses: readme-tools/github-readme-stats-action@v1
         with:
-          image-file: assets/top-langs.svg
-          custom-title: Top Languages
-          colors: dark
-          category-order: languages
-          hide-keys: general,repositories,contributions
-          commit-and-push: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&theme=tokyonight
+          path: assets/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit generated cards
         run: |
