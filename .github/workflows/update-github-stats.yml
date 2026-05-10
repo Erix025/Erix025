@@ -1,0 +1,56 @@
+name: Update GitHub Stats
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 3 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/update-github-stats.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate stats card
+        uses: cicirello/user-statistician@v1
+        with:
+          image-file: assets/github-stats.svg
+          custom-title: GitHub Stats
+          colors: dark
+          hide-keys: languages
+          commit-and-push: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate top languages card
+        uses: cicirello/user-statistician@v1
+        with:
+          image-file: assets/top-langs.svg
+          custom-title: Top Languages
+          colors: dark
+          category-order: languages
+          hide-keys: general,repositories,contributions
+          commit-and-push: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit generated cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/*.svg
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: update GitHub stats"
+          git push

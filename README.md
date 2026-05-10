@@ -8,9 +8,12 @@
 
 ### 📊 GitHub Stats
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=erix025&show_icons=true&hide_rank=true&theme=tokyonight)
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=erix025&layout=compact&theme=tokyonight)
+<a href="https://github.com/erix025">
+  <img height="180" src="./assets/github-stats.svg" alt="GitHub stats for erix025" />
+</a>
+<a href="https://github.com/erix025">
+  <img height="180" src="./assets/top-langs.svg" alt="Top languages for erix025" />
+</a>
 
 ### 🛠️ Tech Stack
 
